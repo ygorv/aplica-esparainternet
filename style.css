@@ -116,8 +116,8 @@
     header {
       flex-direction: row;
       justify-content: space-between;
+      padding: var(--space-sm) var(--space-lg);
     }
-  }
   
     main {
       grid-template-columns: 240px 1fr;
@@ -128,13 +128,16 @@
   
     .sidebar { grid-area: sidebar; }
     .content { grid-area: main; }
-  
+  }
   
   @media (min-width: 1024px) {
     main {
-      grid-template-columns: 240px 1fr;
+      grid-template-columns: 280px 1fr 220px;
+      grid-template-areas: "sidebar main aside";
     }
-  }s
+  
+    .aside { grid-area: aside; }
+  }
     .reserva-form {
         max-width: 400px;
         margin: var(--space-sm) auto;
