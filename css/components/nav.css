@@ -1,0 +1,17 @@
+header {
+    background: var(--color-primary);
+    color: white;
+    padding: var(--space-sm);
+    text-align: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: white;
+  }

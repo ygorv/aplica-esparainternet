@@ -1,0 +1,23 @@
+#hero {
+    background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0')
+      center/cover no-repeat;
+    color: white;
+    padding: var(--space-xl);
+    text-align: center;
+    border-radius: var(--radius-md);
+  }
+  
+  #hero h1 {
+    margin-bottom: var(--space-sm);
+  }
+  
+  #hero p {
+    margin-bottom: var(--space-md);
+  }
+  
+  #hero a {
+    background: var(--color-primary);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    color: white;
+  }
