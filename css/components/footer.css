@@ -1,14 +1,23 @@
-footer {
-    text-align: center;
-    padding: var(--space-md);
-    background: var(--color-primary);
-    color: white;
+.footer {
+  background: #111827;
+  color: #D1D5DB;
+  padding: var(--space-xl);
+}
+
+.footer__grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.footer__copy {
+  margin-top: var(--space-lg);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .reserva-form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
+
+}
