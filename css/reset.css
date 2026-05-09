@@ -21,3 +21,12 @@ img, picture, video {
 input, button, textarea, select {
   font: inherit;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
