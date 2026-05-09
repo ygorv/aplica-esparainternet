@@ -1,155 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <html lang="pt-BR">
+   <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport"
+     content="width=device-width, initial-scale=1.0" />
 
-  <title>Essence Loise & Pontes</title>
+     <meta name="description"
+      content="Restaurante Essence Loise & Pontes com experiência gastronômica sofisticada." /> 
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <title>Essence Loise & Pontes</title> 
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+     <link href=".." rel="stylesheet" > 
 
-  <!-- ITCSS -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/layout.css">
+     <link rel="stylesheet" href="css/variables.css">
+     <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/base.css"> 
+     <link rel="stylesheet" href="css/layout.css"> 
 
-  <!-- Components -->
-  <link rel="stylesheet" href="css/components/navbar.css">
-  <link rel="stylesheet" href="css/components/hero.css">
-  <link rel="stylesheet" href="css/components/card.css">
-  <link rel="stylesheet" href="css/components/footer.css">
-  <link rel="stylesheet" href="css/components/btn.css">
+     <link rel="stylesheet" href="css/components/navbar.css"> 
+     <link rel="stylesheet" href="css/components/hero.css"> 
+     <link rel="stylesheet" href="css/components/card.css"> 
+     <link rel="stylesheet" href="css/components/footer.css"> 
+     <link rel="stylesheet" href="css/components/btn.css"> 
+     
+     <link rel="stylesheet" href="css/utilities.css"> 
+    </head> 
 
-  <!-- Utilities -->
-  <link rel="stylesheet" href="css/utilities.css">
-</head>
+    <body> 
+      <header class="header">
 
-<body>
+         <div class="navbar"> 
+          <a href="#hero" class="navbar__logo"> Essence Loise & Pontes </a> 
+          
+          <button class="navbar__toggle"
+           id="menu-toggle" 
+           aria-label="Abrir menu" 
+           aria-expanded="false" 
+           aria-controls="menu" > 
+           ☰ 
+          </button> 
+          
+          <nav class="navbar__menu" id="menu">
+             <ul class="navbar__list"> 
 
-<header class="header">
+              <li> <a href="#hero">Início</a> </li> 
+              <li> <a href="#cardapio">Cardápio</a> </li> 
+              <li> <a href="#reservas">Reservas</a> </li> 
+             
+            </ul> 
 
-  <div class="navbar">
+          </nav>
 
-    <h1 class="navbar__logo">Essence Loise & Pontes</h1>
+        </div>
 
-    <button class="navbar__toggle" id="menu-toggle">
-      ☰
-    </button>
+      </header> 
+      
+      <main class="main"> 
 
-    <nav class="navbar__menu" id="menu">
-      <ul class="navbar__list">
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#reservas">Reservas</a></li>
-      </ul>
-    </nav>
+        <section id="hero" class="hero"> 
 
-  </div>
+          <h1 class="hero__title"> Experiência Gastronômica Única </h1> 
+          <p class="hero__text"> Sabores sofisticados para momentos especiais </p>
+           <a href="#cardapio" class="btn btn--primary"> Ver Cardápio </a> 
 
-</header>
+          </section>
+          
+          <section class="section" id="cardapio"> 
 
-<main class="main">
+            <h2 class="section__title"> Destaques </h2> 
+            
+             <div class="cards-grid"> 
 
-  <section id="hero" class="hero">
-    <h2 class="hero__title">Experiência Gastronômica Única</h2>
+              <article class="card card--featured"> 
+                <img src="https://www.ribapeixe.pt/pic/850x550/_risoto_de_camarao_e_cogumelos_6669b6e3e518b.jpeg" alt="Risoto de camarão gourmet servido em prato sofisticado" 
+                width="600" 
+                height="400" 
+                loading="lazy" > 
+                
+                <h3 class="card__title"> Risotto de Camarão </h3> 
+                
+                <p class="card__text"> Risoto cremoso preparado com camarões selecionados e ervas finas. </p>
+              
+              </article> 
+              
+              <article class="card"> 
+                <img src="https://s2.glbimg.com/hMaAMm_MhdgrCpXi2O8sg2gN5Pw=/620x750/e.glbimg.com/og/ed/f/original/2022/05/13/drinque-red-berry-com-cha.jpg" 
+                alt="Drink vermelho sofisticado servido em taça" 
+                width="600" 
+                height="400" 
+                loading="lazy" > 
+                
+                <h3 class="card__title"> Drink Vermelho </h3> 
+                <p class="card__text"> Bebida refrescante preparada com frutas vermelhas e especiarias. </p> 
+              
+              </article> 
+              
+              <article class="card"> 
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de" 
+                alt="Sobremesa premium decorada" 
+                width="600" 
+                height="400" 
+                loading="lazy" > 
+                
+                <h3 class="card__title"> Sobremesa Premium </h3> 
+                <p class="card__text"> Finalização perfeita com sabores delicados e apresentação refinada. </p> 
+              
+              </article> 
+              
+              <article class="card"> 
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947" 
+                alt="Prato executivo sofisticado" 
+                width="600" 
+                height="400" 
+                loading="lazy" > 
+                <h3 class="card__title"> Prato Executivo </h3> 
+                <p class="card__text"> Combinação elegante de ingredientes selecionados e alta gastronomia. </p> 
+              
+              </article>
+            
+            </div>
 
-    <p class="hero__text">
-      Sabores sofisticados para momentos especiais
-    </p>
+          </section> 
+        
+        </main> 
+        
+        <footer class="footer" id="reservas"> 
+          
+          <div class="footer__grid"> 
+            <div> 
+              <h3>Essence Loise & Pontes</h3> 
+                <p> Experiência gastronômica sofisticada. </p> 
+            
+            </div> 
+            
+            <div> 
+              <h3>Contato</h3> 
+              <p>(83) 4002-8922</p> 
+              <p>contato@essence.com</p> 
+            
+            </div> 
+            
+            <div> 
+              <h3>Funcionamento</h3> 
+              <p>Ter - Dom</p> 
+              <p>18h às 00h</p> 
+            
+            </div> 
+          
+          </div> 
+          
+          <p class="footer__copy"> © <span id="year"> 
 
-    <a href="#cardapio" class="btn btn--primary">
-      Ver Cardápio
-    </a>
-  </section>
+          </span> Essence </p> 
+        
+        </footer> 
+        
+        <script src="js/main.js">
 
-  <section class="section" id="cardapio">
-
-    <h2 class="section__title">Destaques</h2>
-
-    <div class="cards-grid">
-
-      <article class="card card--featured">
-        <img src="https://www.ribapeixe.pt/pic/850x550/_risoto_de_camarao_e_cogumelos_6669b6e3e518b.jpeg">
-
-        <h3 class="card__title">Risotto de Camarão</h3>
-
-        <p class="card__text">
-          Delicioso e sofisticado.
-        </p>
-      </article>
-
-      <article class="card">
-        <img src="https://s2.glbimg.com/hMaAMm_MhdgrCpXi2O8sg2gN5Pw=/620x750/e.glbimg.com/og/ed/f/original/2022/05/13/drinque-red-berry-com-cha.jpg">
-
-        <h3 class="card__title">Drink Vermelho</h3>
-
-        <p class="card__text">
-          Refrescante.
-        </p>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
-
-        <h3 class="card__title">Sobremesa Premium</h3>
-
-        <p class="card__text">
-          Finalização perfeita.
-        </p>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1544025162-d76694265947">
-
-        <h3 class="card__title">Prato Executivo</h3>
-
-        <p class="card__text">
-          Elegância e sabor.
-        </p>
-      </article>
-
-    </div>
-
-  </section>
-
-</main>
-
-<footer class="footer" id="reservas">
-
-  <div class="footer__grid">
-
-    <div>
-      <h3>Essence Loise & Pontes</h3>
-      <p>Experiência gastronômica sofisticada.</p>
-    </div>
-
-    <div>
-      <h3>Contato</h3>
-      <p>(83) 4002-8922</p>
-      <p>contato@essence.com</p>
-    </div>
-
-    <div>
-      <h3>Funcionamento</h3>
-      <p>Ter - Dom</p>
-      <p>18h às 00h</p>
-
-    </div>
-
-  </div>
-
-  <p class="footer__copy">
-    © <span id="year"></span> Essence
-  </p>
-
-</footer>
-
-<script src="js/main.js"></script>
-
-</body>
-</html>
+        </script> 
+        
+      </body> 
+      
+      </html>
