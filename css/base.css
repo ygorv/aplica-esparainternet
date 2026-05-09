@@ -1,20 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  overflow-x: hidden;
   font-family: var(--font-primary);
   font-size: var(--fs-base);
   color: var(--color-text);
-
-  background: linear-gradient(
-    135deg,
-    #f8f5f2,
-    #efe6de
-  );
+  background:
+    linear-gradient(
+      135deg,
+      #f8f5f2,
+      #efe6de
+    );
 }
-  
-  h1 { font-size: var(--fs-h1); }
-  h2 { font-size: var(--fs-h2); }
-  h3 { font-size: var(--fs-h3); }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
