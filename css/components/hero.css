@@ -1,0 +1,28 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-12);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.45)
+    ),
+    url("")
+    center/cover no-repeat;
+  color: var(--color-text-inverse);
+}
+
+.hero__title {
+  font-size: var(--font-size-h1);
+  margin-bottom: var(--space-4);
+}
+
+.hero__text {
+  margin-bottom: var(--space-6);
+  max-width: 30ch;
+}

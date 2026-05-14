@@ -1,0 +1,43 @@
+:root {
+  
+    --color-action-primary:
+      var(--_brown-500);
+  
+    --color-action-primary-hover:
+      var(--_brown-700);
+  
+    --color-surface:
+      var(--_white);
+  
+    --color-surface-secondary:
+      var(--_gray-50);
+  
+    --color-text-primary:
+      var(--_gray-800);
+  
+    --color-text-inverse:
+      var(--_white);
+  
+    --color-border:
+      var(--_gray-300);
+  
+    --color-footer:
+      var(--_gray-900);
+  
+  }
+  
+  [data-theme="dark"] {
+  
+    --color-surface:
+      var(--_gray-900);
+  
+    --color-surface-secondary:
+      var(--_gray-800);
+  
+    --color-text-primary:
+      var(--_gray-50);
+  
+    --color-footer:
+      var(--_gray-800);
+  
+  }

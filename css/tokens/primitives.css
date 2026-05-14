@@ -1,0 +1,34 @@
+:root {
+  
+    --_brown-500: #8B5E3C;
+    --_brown-700: #6E462B;
+  
+    --_white: #FFFFFF;
+  
+    --_gray-50: #F9FAFB;
+    --_gray-100: #F3F4F6;
+    --_gray-300: #D1D5DB;
+    --_gray-800: #1F2937;
+    --_gray-900: #111827;
+  
+    --space-2: 0.5rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+  
+    --radius-sm: 6px;
+    --radius-md: 12px;
+
+    --font-primary: 'Inter', sans-serif;
+  
+    --font-size-base: clamp(0.875rem, 2vw, 1rem);
+    --font-size-xl: 1.25rem;
+  
+    --font-size-h1:
+      clamp(2rem, 5vw, 3rem);
+  
+    --font-size-h2:
+      clamp(1.5rem, 4vw, 2rem);
+  
+  }
