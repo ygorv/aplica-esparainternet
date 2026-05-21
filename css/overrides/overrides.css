@@ -1,0 +1,28 @@
+@layer overrides {
+
+    :focus {
+      outline: none;
+    }
+  
+    :focus-visible {
+  
+      outline:
+        3px solid var(--color-action-primary);
+  
+      outline-offset: 3px;
+  
+      border-radius:
+        var(--radius-sm);
+  
+    }
+  
+    input,
+    select,
+    textarea {
+  
+      font-size:
+        max(16px, 1rem);
+  
+    }
+  
+  }
