@@ -1,17 +1,43 @@
-.btn {
-  padding:0.75rem 1.5rem;
-  border-radius:var(--radius-sm);
-  transition:0.3s;
-  display: inline-block;
-  text-decoration: none;
-}
+@layer components {
 
-.btn--primary {
-  background:var(--color-action-primary);
-  color:var(--color-text-inverse);
-}
+  .btn {
 
-.btn--primary:hover {
-  background:
-    var(--color-action-primary-hover);
+    padding:
+      0.75rem 1.5rem;
+
+    border-radius:
+      var(--radius-sm);
+
+    transition: 0.3s;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    min-height: 44px;
+
+  }
+
+  .btn--primary {
+
+    background:
+      var(--color-action-primary);
+
+    color:
+      var(--color-text-inverse);
+
+  }
+
+  .btn--primary:hover,
+  .btn--primary:focus-visible {
+
+    background:
+      var(--color-action-primary-hover);
+
+  }
+
 }
