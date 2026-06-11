@@ -6,20 +6,21 @@
 
     flex-direction: column;
 
-    background: rgba(255,255,255,.75);
+    background: rgba(255, 255, 255, 0.75);
 
     border-radius: var(--radius-md);
 
     overflow: hidden;
 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(10px);
+
     transition:
       transform .3s ease,
       box-shadow .3s ease;
 
-    box-shadow:
-      0 8px 20px rgba(0,0,0,.08);
-
-    backdrop-filter: blur(10px);
+    height: 100%;
 
   }
 
@@ -27,6 +28,8 @@
   .card:focus-within {
 
     transform: translateY(-8px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 
   }
 
@@ -43,42 +46,25 @@
   .card__title {
 
     padding:
-      var(--space-6)
-      var(--space-6)
+      var(--space-4)
+      var(--space-4)
       var(--space-2);
 
     font-size:
-      clamp(1.2rem, 2vw, 1.5rem);
+      clamp(1rem, 2vw, 1.3rem);
 
   }
 
   .card__text {
 
     padding:
-      0 var(--space-6)
-      var(--space-6);
+      0
+      var(--space-4)
+      var(--space-4);
 
-    line-height: 1.6;
+    line-height: 1.5;
 
-    max-width: 65ch;
-
-  }
-
-  @container (min-width: 500px) {
-
-    .card {
-
-      flex-direction: row;
-
-    }
-
-    .card img {
-
-      width: 220px;
-
-      flex-shrink: 0;
-
-    }
+    max-width: 100%;
 
   }
 
