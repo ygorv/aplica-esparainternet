@@ -1,0 +1,63 @@
+@layer components {
+
+  .banner {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: var(--space-6);
+
+    padding: var(--space-12);
+
+    border-radius: var(--radius-md);
+
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+      ),
+      url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+      center / cover no-repeat;
+
+    color: var(--color-text-inverse);
+
+  }
+
+  .banner__title {
+
+    font-size: var(--font-size-hero);
+
+    text-align: center;
+
+    margin: 0;
+
+  }
+
+  .banner__text {
+
+    max-width: 40ch;
+
+    text-align: center;
+
+    margin: 0;
+
+    line-height: 1.6;
+
+  }
+
+  .banner .btn {
+
+    align-self: center;
+
+  }
+
+}
