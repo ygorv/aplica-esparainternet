@@ -16,10 +16,29 @@
 
     display: grid;
 
-    grid-template-columns:
-      repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
 
-    gap: var(--space-8);
+    gap: var(--space-6);
+
+  }
+
+  @container (min-width: 600px) {
+
+    .cards-grid {
+
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+
+  }
+
+  @container (min-width: 1000px) {
+
+    .cards-grid {
+
+      grid-template-columns: repeat(4, 1fr);
+
+    }
 
   }
 
